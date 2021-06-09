@@ -14,6 +14,6 @@ module.exports = withBundleAnalyzer(
     env: {
       NEXT_PUBLIC_BUILD_REVISION: process.env.BUILD_REVISION || 'DEVELOP'
     },
-    basePath: '/template'
+    basePath: '/prueba'
   })
 )

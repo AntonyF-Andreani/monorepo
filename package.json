@@ -1,5 +1,5 @@
 {
-  "name": "@outsrc/monorepo",
+  "name": "@andreani/monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,7 @@
     "lint": "eslint --ext .ts,.tsx,.js packages",
     "generate": "plop --plopfile .plop/plopfile.ts",
     "start": "ts-node -P tsconfig.json .scripts/start.ts",
-    "stop": "ts-node -P tsconfig.json .scripts/stop.ts",
-    "change-org": "ts-node -P tsconfig.json .scripts/change-org.ts"
+    "stop": "ts-node -P tsconfig.json .scripts/stop.ts"
   },
   "keywords": [],
   "author": "",

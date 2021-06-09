@@ -39,7 +39,7 @@ $ yarn storybook
 Local Application Storybook
 
 ```
-$ yarn workspace @outsrc/template storybook
+$ yarn workspace @andreani/template storybook
 ```
 
 ## Tests
@@ -53,9 +53,9 @@ $ yarn test
 Run Application / Shared Module only tests
 
 ```
-$ yarn workspace @outsrc/template test
+$ yarn workspace @andreani/template test
 
-$ yarn workspace @outsrc/functions test
+$ yarn workspace @andreani/functions test
 ```
 
 ## Running Applications
@@ -72,7 +72,7 @@ To run all applications using dev mode for some
 $ yarn start --dev template
 ```
 
-_(You can now make changes to the @outsrc/template application and see changes hot reloading on the browser)_
+_(You can now make changes to the @andreani/template application and see changes hot reloading on the browser)_
 
 To stop all applications
 
@@ -85,5 +85,5 @@ $ yarn stop
 If you want to make this repo yours start by using the `change-org` script.
 
 ```
-$ yarn change-org --from @outsrc --to @yourcompany
+$ yarn change-org --from @andreani --to @yourcompany
 ```

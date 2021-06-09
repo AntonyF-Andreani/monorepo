@@ -1,6 +1,7 @@
 import { NodePlopAPI } from 'plop'
+import { PlopGeneratorConfig } from './types'
 
-export const appGenerator = (plop: NodePlopAPI) => {
+export const appGenerator = (plop: NodePlopAPI): PlopGeneratorConfig => {
   const prompts = [
     {
       type: 'input',
@@ -31,7 +32,7 @@ export const appGenerator = (plop: NodePlopAPI) => {
           source: 'packages/app/template',
           dest: `packages/app/${appName}`,
           replaceInFiles: {
-            '@outsrc/template': `@outsrc/${appName}`,
+            '@andreani/template': `@andreani/${appName}`,
             '3010': port,
             'Frontend App Template': description,
             '/template': appPath,

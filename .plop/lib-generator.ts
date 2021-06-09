@@ -1,6 +1,7 @@
 import { NodePlopAPI } from 'plop'
+import { PlopGeneratorConfig } from './types'
 
-export const libGenerator = (plop: NodePlopAPI) => {
+export const libGenerator = (plop: NodePlopAPI): PlopGeneratorConfig => {
   const prompts = [
     {
       type: 'input',
@@ -21,7 +22,7 @@ export const libGenerator = (plop: NodePlopAPI) => {
           source: 'packages/shared/functions',
           dest: `packages/shared/${libName}`,
           replaceInFiles: {
-            '@outsrc/functions': `@outsrc/${libName}`,
+            '@andreani/functions': `@andreani/${libName}`,
             'Templated shared functions': description
           }
         }
@@ -32,6 +33,6 @@ export const libGenerator = (plop: NodePlopAPI) => {
   return {
     description: 'Shared Module Generator',
     prompts,
-    actions
+    actions,
   }
 }

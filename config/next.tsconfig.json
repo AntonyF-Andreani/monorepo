@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "strictNullChecks": true,
     "paths": {
-      "@outsrc/*": ["../packages/shared/*"]
+      "@andreani/*": ["../packages/shared/*"]
     }
   }
 }
